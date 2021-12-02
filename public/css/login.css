@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root{
+    --color-amarillo:#eac926;
+    --color-azul:#03264C;
+    --color-celeste:#1259c3;
+    --color-grisOscuro:#666;
+    --color-grisClaro:#ebebeb;
+    --color-verde:#39b54a;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration:none;
+}
+/* HEADER */
+.login header{
+    background-color:var(--color-amarillo);
+}
+
+.login header img{
+    display: inline;
+    width: 50%;
+}
+
+.login header div.hm{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+
+.login header div.search-bar{
+    display: flex;
+    align-items: center;
+    width: 47%;
+    border: 1px solid #808080;
+    border-radius: 8px;
+    background-color: #ffffff;
+    padding: 8px;
+}
+
+.login header div.search-bar input{
+    border: 1px;
+    border-radius: 6px;
+    width: 90%;
+}
+
+.login header i.fa-search{
+    font-size: 15px;
+    background-color: #ffffff;
+}
+
+.login header div.cuotas {
+    display: block;
+    text-align: center;    
+}
+
+.login header nav.nav-bar, .login header nav.login-bar{
+    display:none;
+    padding-bottom: 20px;
+}
+
+.login header div.burger-menu i{
+    margin: 5vh 50vw;
+    border-radius: 5px;
+    border: solid var(--color-celeste) 10px;
+    background-color:var(--color-celeste);
+    color: white;
+}
+
+/* MAIN */
+
+.login main{
+    background-color: var(--color-grisClaro);
+    padding-bottom: 20px;
+}
+
+.login main form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.login main form div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.login main form input{
+    width: 70%;
+    padding: 5px;
+}
+
+.login main form span{
+    color: #ff0505;
+}
+
+.login main form div.enviar{
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.login main form div.enviar input{
+    width: 40%;
+    border-radius: 5vw;
+}/* afmsomfsaomfsoamfdomasfomasofmaosfmaosmfoasmfoasmfoasmfoasmfosamfoasfmaosfmosafm */
+.login main form div.enviar input:hover{
+    background-color: #0022AA;
+}
+
+/* FOOTER */
+.login footer section article{
+    padding-top: 10px;
+    text-align: center;
+    margin: 40px 10%;
+}
+
+.login footer i{
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: var(--color-celeste);
+}
+
+
+/* TABLET */
+
+@media (min-width:426px){
+
+    *{
+    font-size: 2vw;
+    }
+
+    /* HEADER */
+
+    .login header div.ht{
+        padding-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .login header nav.nav-bar, .login header nav.login-bar{
+        display: block;
+        width: 50%;
+    }
+
+    .login header div.ht ul{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .login header div.burger-menu{
+        display: none;
+    }
+
+    /* FOOTER */
+
+    .login footer section{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .login footer section article{
+        width: 20%;
+        text-align: center;
+        margin: 0;
+    }
+
+}
+
+/* Desktop */
+
+    @media (min-width:769px){
+
+        *{
+            font-size: 1.5vw;
+        }
+    
+        /* HEADER */
+    
+        .login header {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        /* FOOTER */
+
+    .login footer section article{
+        width: 25%;
+    }
+
+}
